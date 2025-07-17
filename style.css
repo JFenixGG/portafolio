@@ -1,0 +1,220 @@
+
+body {
+    background-color: #341539;
+}
+
+
+@font-face {
+    font-family: openix;
+    src: url("/peuentes/LibertinusMono-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: openix1;
+    src: url("peuentes/Open_Sans/static/OpenSans-Light.ttf");
+}
+
+#menu {
+    font-family: openix;
+    font-size: 200%;
+    text-align: right;
+    margin-top: 13%;
+    margin-left: 85%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.item {
+    padding: 0px;
+}
+
+.item a {
+    color: hsl(270, 3%, 87%);
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+.fond {
+    color: #3e1c44;
+    font-family: openix1;
+    overflow: hidden;
+    user-select: none;
+    background: linear-gradient(to right,
+            hsl(291, 42%, 19%) 0,
+            hsl(291, 44%, 26%) 50%,
+            hsl(291, 42%, 19%) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% center;
+    }
+
+    100% {
+        background-position: 0% center;
+    }
+}
+
+.name {
+    font-family: openix;
+    font-size: 525%;
+    color: hsl(0, 100%, 97%);
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 16%;
+    position: fixed;
+    user-select: none;
+    background: linear-gradient(to right,
+            hsl(208, 15%, 80%) 0,
+            hsl(207, 88%, 91%),
+            hsl(188, 100%, 86%) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+}
+
+.subname {
+    font-family: openix;
+    font-size: 140%;
+    color: hsl(0, 100%, 97%);
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 16.4%;
+    position: fixed;
+    user-select: none;
+    background: linear-gradient(to right,
+            hsl(0, 100%, 97%) 0,
+            hsl(0, 0%, 100%),
+            hsl(0, 100%, 86%) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.actives {
+    padding-bottom: 5%;
+    padding-top: 5%;
+    transform: matrix3d(0%, 10, 20);
+    transition: 0.5s;
+}
+
+
+.pro2 button{
+    margin-top: 17%;
+    margin-left: 39%;
+    padding: 0.5%;
+    display: flex;
+    background-color: black;
+    border-radius: 10%;
+    border-color: rgb(61, 61, 61);
+    box-shadow: 5px 5px 10px #492150;
+    position: fixed;
+    width: 14%;
+    height: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 190%;
+}
+
+.pro2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: openix;
+}
+
+.pro3 button{
+    margin-top: 17%;
+    margin-left: 39%;
+    padding: 0.5%;
+    display: flex;
+    background-color: black;
+    border-radius: 10%;
+    border-color: rgb(61, 61, 61);
+    box-shadow: 5px 5px 10px #492150;
+    position: fixed;
+    width: 14%;
+    height: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 190%;
+}
+
+.pro3 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: openix;
+}
+
+.pro4 button{
+    margin-top: 17%;
+    margin-left: 36%;
+    padding: 0.5%;
+    display: flex;
+    background-color: black;
+    border-radius: 10%;
+    border-color: rgb(61, 61, 61);
+    box-shadow: 5px 5px 10px #492150;
+    position: fixed;
+    width: 20%;
+    height: 12%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 190%;
+    padding: 1%;
+}
+
+.pro4 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: openix;
+}
+
+.pro5 button{
+    margin-top: 27%;
+    margin-left: 33.5%;
+    padding: 0.5%;
+    display: flex;
+    background-color: black;
+    border-radius: 10%;
+    border-color: rgb(61, 61, 61);
+    box-shadow: 5px 5px 10px #492150;
+    position: fixed;
+    width: 25%;
+    height: 12%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 190%;
+}
+
+.pro5 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: openix;
+    padding: 1%;
+}
+.seccion {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
